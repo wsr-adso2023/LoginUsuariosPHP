@@ -1,0 +1,389 @@
+:root {
+    --main-bg-color: rgb(237,237,237); /*BACKGROUND*/
+    --main-text-color: #fff; /*TEXTO COLOR*/
+    --main-cont-color: rgb(245, 245, 245); /*BACKGROUND CONTAINER*/
+    --main-bor-color: rgb(10,85,118); /*BORDE*/
+  }
+.container{
+    display: grid;
+    gap: 16%;
+}
+body{
+    background-color: var(--main-bg-color);
+    margin: 0;
+    font-family: Roboto;
+}
+/* INICIO LOGIN */
+.containerlogin{
+    display: flex;
+    justify-content: center;
+}
+.login{
+    display: grid;
+    text-align: center;
+    background-color: var(--main-cont-color);
+    border: solid var(--main-bor-color);
+    width: 400px;
+    margin-top: 6%;
+    border-radius: 1%;
+    
+}
+.textlogin{
+    background-color: var(--main-bor-color);
+    color: var(--main-text-color);
+    padding: 3%;
+}
+.notierror{
+    height: 60px;
+}
+#notif{
+    background-color: rgb(189, 75, 75); 
+    padding: 10px; 
+    color: rgb(245, 245, 245)
+}
+.formlogin{
+    padding: 5%;
+}
+#inputuser, #inputpass{
+    margin-bottom: 8%;
+    width: 100%;
+    height: 30px;
+}
+#btnlogin{
+    background-color: var(--main-bor-color);
+    border: solid var(--main-bor-color);
+    color: var(--main-text-color);
+    padding: 3%;
+    margin-bottom: 10%;
+}
+#helppass{
+    text-decoration: none;
+    color: var(--main-bor-color);
+}
+
+/* CONTENEDOR DE INFORMACION*/
+#containerinfo{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    background-color: var(--main-bor-color);
+    padding: 1%;
+    color: var(--main-text-color);
+}
+#contact, #address{
+    display: grid;
+    gap: 7%;
+    text-align: center;
+}
+/* FIN LOGIN */
+
+main{ /* ANTES BODYPANEL*/
+    display: flex;
+    gap: 30px;
+}
+
+/* HEAD */
+.head{
+    background-color: var(--main-bor-color);
+    height: 20px;
+}
+/* HEAD */
+
+/* MENU  */
+.menu{
+    background-color: rgb(245,245,245);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 310px;
+}
+.title{
+    display: flex;
+    background-color: var(--main-bor-color);
+    color: var(--main-text-color);
+    width: 310px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+}
+.imgavatar{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+}
+.rol{
+    display: flex;
+    color: var(--main-bor-color);
+    height: 30px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.modules{
+    display: grid;
+    justify-content: center;
+}
+#menu, ul, li{
+    margin: 0;
+    padding: 0;
+}
+#menu ul {
+        line-height: 25px;
+    }
+#menu li {
+    list-style: none;
+    position: relative;
+    background: var(--main-cont-color);
+}
+#menu li li {
+    list-style: none;
+    position: relative;
+    background: var(--main-cont-color);
+    left: 100%;
+    top: -27px;
+}
+#menu ul li a {
+    width: 300px;
+    height: 25px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+#menu ul ul {
+        position: absolute;
+        visibility: hidden;
+        top: 27px;
+    }
+#menu ul li:hover ul {
+        visibility: visible;
+    }
+#menu li:hover {
+        background-color: var(--main-bg-color);
+    }
+#menu ul li:hover ul li a:hover {
+        background-color: var(--main-bg-color);
+}
+/* MENU  */
+/* BOTON CERRAR SESION */
+.close{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.csbutton{
+    color: var(--main-text-color);
+    font-size: 14px;
+    background-color: var(--main-bor-color);
+    border: solid var(--main-bor-color);
+    width: 150px;
+    height: 38px;
+}
+/* BOTON CERRAR SESION */
+/* CREAR USUARIOS */
+.registro{
+    display: flex;
+    gap: 20px;
+}
+
+
+.formRegistro, .usuario{
+    display: grid;
+    margin-top: 20px;
+    padding: 2%;
+    background-color: var(--main-cont-color);
+}
+.nombres, .apellidos, .contacto, .direccion,
+.cargo, .numero_documento, .tipo_documento,
+.fechanacimiento, .nombreUsuario, .contraseña{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+#nombres, #apellidos, #dni, #telefono,
+#user, #pass, #selectdniuser, #direccion{
+    padding: 5px;
+    width: 250px;
+}
+#cargo, #selectdniuser, #fechanacimiento{
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 200px;
+}
+.notifi{
+    background-color: rgb(71, 183, 120);
+    color: rgb(245, 245, 245);
+}
+.btnreg, .btnsave{
+    display: grid;
+    margin-top: 5%;
+    justify-items: center;
+    align-items: center;
+}
+#btnregistro, #btnactualizar, #btnCrearUsuario,
+#btnCancelar, #btngenerar, #btneliminar{
+    background-color: var(--main-bor-color);
+    border: solid var(--main-bor-color);
+    color: var(--main-text-color);
+    height: 30px;
+    width: 80px;
+}
+/* CREAR USUARIOS */
+/* BUSCAR USUARIO EN EL SISTEMA */
+.tablaUsuarios{
+    display: grid;
+    margin-top: 15px;
+    padding: 2%;
+    background-color: var(--main-cont-color);
+}
+
+.encabezado{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    color: #fff;
+    background-color: var(--main-bor-color);
+}
+th{
+    padding: 2px;
+    border-bottom: solid;
+    border: none;
+    font-size: 13px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+td{
+    font-size: 13px;
+    text-align: center;
+    padding: 2px;
+    border: none;
+    
+}
+.editar, .eliminar{
+    padding: 4px;
+    color: #fff;
+    background-color: var(--main-bor-color);
+    text-decoration: none;
+}
+
+/* BUSCAR USUARIO EN EL SISTEMA */
+/* ASIGNAR USUARIO EN EL SISTEMA */
+.habilitarAcceso{
+    display: flex;
+    margin-top: 20px;
+    padding: 2%;
+    background-color: var(--main-cont-color);
+}
+.btn2{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+.contenedorGenerador{
+    margin-top: 20px;
+    background-color: #fff;
+}
+.generador{
+    display: grid;
+    margin-top: 25px;
+}
+.contenedorLongitud{
+    display: flex;
+    margin-top: 17px;
+    gap: 55px;
+}
+#longitudContraseña{
+    width: 200px;
+}
+.generada{
+    width: 25px;
+}
+.contraseñaGenerada{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+/* ASIGNAR USUARIO EN EL SISTEMA */
+
+
+/* ROL: BODEGA */
+/* INVENTARIO DE PRODUCTOS */
+.columna1, .columna2, .columna3{
+    display: grid;
+    
+}
+
+.columna1{
+    gap: 20px;
+}
+.nombreProducto{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    #nProducto{
+        width: 280px;
+        padding: 4px;
+    }
+
+}
+.precioCantidad{
+    display: flex;
+    gap: 30px;
+}
+.precioUnidad{
+    text-align: center;
+
+    #precio{
+        width: 90px;
+        padding: 5px;    }
+}
+.cantidad{
+    text-align: center;
+
+    #cantidad{
+        width: 35px;
+        padding: 5px;    }
+    
+}
+.caracteristicas{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+
+    #ingreso{
+        width: 150px;
+        height: 25px;
+    }
+}
+
+.columna3{
+    gap: 60px;
+    margin-top: 30px;
+    
+    #categoria{
+        width: 170px;
+        gap: 20px;
+        margin-left: 20px;
+    }
+    .descripcion{
+        display: flex;
+    }
+    
+    #descripcionCategoria{
+        margin-left: 20px;
+    }
+}
+
+
+
+/* INVENTARIO DE PRODUCTOS */
+/* ROL: BODEGA */
